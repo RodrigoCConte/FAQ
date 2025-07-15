@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Monofloor</title>
+  <style>
+    @font-face {
+      font-family: 'widescreen-regular';
+      src: url('https://rodrigocconte.github.io/monofloor-fonts/Widescreen%20Regular.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'widescreen-exbold';
+      src: url('https://rodrigocconte.github.io/monofloor-fonts/Widescreen%20Ex%20Bold.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: 'widescreen-regular', sans-serif;
+      background: transparent;
+    }
+
+    #faq-container {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      border: 1px solid black;
+      border-radius: 50px;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'widescreen-exbold';
+    }
+
+    .faq-question span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.3s ease;
+      padding: 0 24px;
+      font-size: 11px;
+      line-height: 2;
+      font-family: 'widescreen-regular';
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 12px 24px 40px;
+      max-height: 2000px;
+    }
+
+    .faq-answer p {
+      margin-bottom: 16px;
+    }
+
+    .toggle-btn {
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 1;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'widescreen-regular';
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .toggle-btn {
+      background-color: black;
+      color: white;
+    }
+
+    .close-btn {
+      display: block;
+      margin-left: auto;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 1;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    html, body {
+      height: auto;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="faq-container">
+    <!-- PERGUNTA 1 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span><span class="numero">1.</span> Por que o que o mercado oferece não funciona?</span>
+        <button class="toggle-btn">+</button>
+      </div>
+      <div class="faq-answer">
+        <p><strong>1. Porque os materiais usados hoje foram criados para economizar, não para durar.</strong><br>
+        A maioria dos revestimentos convencionais é feita à base de cimento, um material barato, poroso e instável. Falamos com propriedade. Os primeiros sistemas da Monofloor foram à base de cimento. São tecnologias pensadas para grandes volumes e baixo custo, não para projetos com longevidade, sofisticação ou resistência real. O problema começa quando se espera performance de um material que não foi feito para isso.</p>
+
+        <p><strong>2. Porque o cliente acredita que a estética artesanal exige abrir mão da durabilidade.</strong><br>
+        Existe um dilema comum entre beleza e performance. Muitos acreditam que para ter um acabamento mais natural, contínuo e artístico (como o cimento queimado), é preciso aceitar trincas, manchas e desgaste precoce. Essa crença limitante nasce da falta de opções tecnológicas que entreguem os dois mundos. O STELION une a beleza dos minerais com o que há de melhor no mundo.</p>
+        <button class="close-btn">–</button>
+      </div>
+    </div>
+
+    <!-- PERGUNTA 2 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span><span class="numero">2.</span> Quais soluções o mercado oferece?</span>
+        <button class="toggle-btn">+</button>
+      </div>
+      <div class="faq-answer">
+        <p><strong>1. Cimento queimado, Chukum, Tadelakt, Microcimento, Concreto polido e outros: o monolítico “artesanal” que não dura.</strong><br>
+        Muitos apostaram no cimento queimado & similares buscando um visual contínuo e natural. Mas logo surgem trincas, riscos profundos, manchas, desplacamentos. As soluções até entregam a estética desejada por alguns meses, às vezes semanas, mas não resistem ao uso real nem ao passar dos anos.</p>
+
+        <p><strong>2. Porcelanatos e revestimentos frios: a escolha “segura” que compromete o visual.</strong><br>
+        Muitos, por segurança, optam por porcelanatos, cerâmicas ou materiais sintéticos. Duráveis, sim. Mas com emendas, paginações visíveis e aparência genérica. O resultado é um ambiente com cara de showroom de loja de material de construção, não de projeto autoral.</p>
+
+        <p><strong>3. Materiais naturais: a escolha de quem tem bom gosto.</strong><br>
+        Não nos importamos em perder espaço para estes. Cada um tem sua particularidade, mas só se faz arte com os materiais corretos. Se você não fizer um piso de Monofloor porque comprou madeira, pedra, mármore ou qualquer outro revestimento natural, fique tranquilo pois ainda tem nossa admiração. Agora, se fechou porcelanato... :')</p>
+        <button class="close-btn">–</button>
+      </div>
+    </div>
+
+    <!-- PERGUNTA 3 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span><span class="numero">3.</span> Por que o STELION resolve esses problemas?</span>
+        <button class="toggle-btn">+</button>
+      </div>
+      <div class="faq-answer">
+        <p><strong>1. Porque o STELION foi criado para unir o que ninguém conseguia: beleza e resistência.</strong><br>
+        Ao contrário das soluções que obrigam o cliente a escolher entre estética artesanal ou performance estrutural, o STELION entrega os dois. Foram 8 anos de know-how e inúmeros testes. Com apenas 3mm, ele é contínuo, sem juntas, feito à mão, e ainda assim mais resistente que qualquer microrevestimento do mercado. Um produto que elimina a velha troca entre forma e função.</p>
+
+        <p><strong>2. Porque sua tecnologia é inédita e sua aplicação é exclusiva.</strong><br>
+        O STELION combina uma estrutura em três camadas, basecoat inspirado no asfalto, topcoat mecânico de alta densidade e LUMINA, um verniz com o maior teor de sólidos do mercado. Tudo aplicado por artesãos treinados, sob controle total da Monofloor. O resultado: um revestimento que não depende da sorte da obra, mas da precisão do processo.</p>
+
+        <p><strong>3. Porque o STELION resolve de forma definitiva os pontos fracos do mercado.</strong><br>
+        Trincas? Prevenidas pela flexibilidade da base. Manchas? Neutralizadas pela impermeabilidade total. Desgaste? Superado por uma dureza superior ao concreto polido. Cada falha do mercado virou um desafio técnico e foi vencido com ciência, engenharia e arte.</p>
+        <button class="close-btn">–</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const closeBtn = item.querySelector('.close-btn');
+
+      question.addEventListener('click', () => {
+        faqItems.forEach(el => {
+          if (el !== item) el.classList.remove('active');
+        });
+        item.classList.toggle('active');
+        sendHeight();
+      });
+
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        item.classList.remove('active');
+        sendHeight();
+      });
+    });
+
+    function sendHeight() {
+      setTimeout(() => {
+        const height = document.body.scrollHeight;
+        window.parent.postMessage({ type: 'setHeight', height: height }, '*');
+      }, 500);
+    }
+  </script>
+</body>
+</html>
